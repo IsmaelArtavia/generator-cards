@@ -1,0 +1,84 @@
+body {
+    background:#0E7E12;
+    box-sizing: border-box;
+}
+ 
+.card{
+    text-align: center;
+   
+    background: white;
+    margin: auto;
+    height: 200px;
+    font-size: 80px;
+    width: 250px;
+    padding: 20px;
+    padding-top: 180px;
+    border:1px solid black;
+    border-radius: 5px;
+    position: relative;
+
+}
+
+
+&:before{
+    content: '\2660';
+    position: absolute;
+    top:20px;
+    left:20px;
+    font-size: 80px;
+}
+
+&:after{
+     content: '\2660';
+    position: absolute;
+    bottom:20px;
+    right:20px;
+    font-size: 80px;
+}
+
+
+.arriba{
+        position: absolute;
+    top:20px;
+    left:20px;
+    font-size: 80px;
+ 
+}
+
+
+.number{
+      position: absolute;
+    top:150px;
+    left:100px;
+    font-size: 80px;
+}
+
+
+
+.abajo{
+        
+   position: absolute;
+    bottom:-300px;
+    left:200px;
+    font-size: 80px;
+}
+
+&.spades:before, &.spades:after{
+    content: '\2660';
+}
+
+&.club:before, &.club:after{
+    content: '\2663';
+
+}
+
+&.heart:before, &.heart:after{
+    content: '\2663'; color:red;
+
+}
+
+&.diamond:before, &.diamond:after{
+    content: '\2666'; color:red';
+
+}
+
